@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.calculator {
+  width: 300px;
+  height: 330px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px repeat(5, 50px);
+  border: black 1px solid;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+#screen-result {
+  grid-column: 1/5;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+#num0 {
+  grid-column: 1/3;
+}
