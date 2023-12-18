@@ -7,28 +7,32 @@
     <title>Calculator</title>
   </head>
   <body>
-    <section class="calculator">
-      <div id="screen-result"></div>
-      <button id="clear">C</button>
-      <button id="nevpos">+/-</button>
-      <button id="percent">%</button>
-      <button id="divide">:</button>
-      <button id="num7">7</button>
-      <button id="num8">8</button>
-      <button id="num9">9</button>
-      <button id="multiply">x</button>
-      <button id="num4">4</button>
-      <button id="num5">5</button>
-      <button id="num6">6</button>
-      <button id="subtract">-</button>
-      <button id="num1">1</button>
-      <button id="num2">2</button>
-      <button id="num3">3</button>
-      <button id="add">+</button>
-      <button id="num0">0</button>
-      <button id="decimal">.</button>
-      <button id="equal">=</button>
-    </section>
+    <div class="container">
+      <section class="calculator">
+        <div id="screen-result">
+          <p class="result"></p>
+        </div>
+        <button data-specialoperator="clear">AC</button>
+        <button data-specialoperator="+/-">+/-</button>
+        <button data-specialoperator="%">%</button>
+        <button data-operator="÷">÷</button>
+        <button data-number="7">7</button>
+        <button data-number="8">8</button>
+        <button data-number="9">9</button>
+        <button data-operator="×">×</button>
+        <button data-number="4">4</button>
+        <button data-number="5">5</button>
+        <button data-number="6">6</button>
+        <button data-operator="-">-</button>
+        <button data-number="1">1</button>
+        <button data-number="2">2</button>
+        <button data-number="3">3</button>
+        <button data-operator="+">+</button>
+        <button id="num0" data-number="0">0</button>
+        <button id="decimal" data-number=".">.</button>
+        <button data-specialoperator="=">=</button>
+      </section>
+    </div>
     <script src="script.js" defer></script>
   </body>
 </html>
